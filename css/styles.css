@@ -1,0 +1,91 @@
+/*resetando estilização do site*/
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    text-align: center;
+}
+
+.link {
+    color: rgb(249, 252, 252);
+}
+
+.conteudo {
+    background-color: #1b1a1a;
+    margin: 120px;
+    color: #fcf6f6;
+    position: relative;
+    text-align: justify;
+}
+
+body {
+    background-image: url(img/preto.jpg);
+    margin: 0;
+    padding: 8;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 10vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.mySlides {
+    display: none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor: pointer
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+} 
+
+/*Um acrecimo a mais, para deixar legal*/
+body{
+    background-image: url('../img/preto.jpg');/*Aqui você coloca o link da sua imagem*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
